@@ -1,16 +1,35 @@
-# planner
+# Student Planner App 📚
 
-A new Flutter project.
+A Flutter application to help students manage
+- Subject attendance
+- Weekly class timetable
+- Daily class view
+- Low attendance alerts
 
-## Getting Started
+## Features
+- Track attendance per subject
+- Visual indicators (green ≥75%, red 75%)
+- Local notifications when attendance drops below 75%
+- Add, edit, and delete timetable entries
+- View today's classes sorted by time
+- Fully offline (Hive local database)
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- Flutter
+- Hive (local persistence)
+- flutter_local_notifications
 
-A few resources to get you started if this is your first Flutter project:
+## Screens
+- Attendance Screen
+- Today’s Classes Screen
+- AddEdit Timetable Screen
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Architecture
+- Attendance and Timetable are separate data models
+- Reactive UI using `ValueListenableBuilder`
+- Clean separation of concerns
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to Run
+```bash
+flutter pub get
+flutter run
