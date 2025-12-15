@@ -31,6 +31,6 @@ A Flutter application to help students manage
 
 ## How to Run
 ```bash
-fluuter clean
+flutter clean
 flutter pub get
 flutter run
